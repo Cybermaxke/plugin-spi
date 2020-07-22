@@ -54,8 +54,8 @@ public class JVMPluginContainer implements PluginContainer {
     }
 
     @Override
-    public Path getFile() {
-        return this.candidate.getFile();
+    public Optional<Path> getFile() {
+        return Optional.of(this.candidate.getFile());
     }
 
     @Override

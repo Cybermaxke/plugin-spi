@@ -52,7 +52,7 @@ public interface PluginContainer {
      *
      * @return The file
      */
-    Path getFile();
+    Optional<Path> getFile();
 
     /**
      * Gets a {@link Logger} with the id set to this plugin's id.
